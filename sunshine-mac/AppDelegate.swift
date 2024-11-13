@@ -76,7 +76,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         }
         
         var args = [String]()
-        args.append("~/.config/sunshine/sunshine.conf")
+        let configPath = FileManager.default.homeDirectoryForCurrentUser.path() + ".config/sunshine/sunshine.conf"
+        args.append(configPath)
         
         let logPipe = Pipe()
         FileManager.default.createFile(atPath: logFileURL.path, contents: nil, attributes: nil)
