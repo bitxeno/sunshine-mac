@@ -17,6 +17,7 @@ Exit app and run the following command to reset screen capture permission.
 
 ```
 tccutil reset ScreenCapture dev.bitxeno.sunshine-mac
+tccutil reset Accessibility dev.bitxeno.sunshine-mac
 ```
 
 then start app again
